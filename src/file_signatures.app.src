@@ -11,7 +11,7 @@
 
   , {maintainers, ["Gregoire Lejeune"]}
   , {licenses, ["BSD-3"]}
-  , {links, [{"Github", "https://github.com/botsunit/file_signatures"}]}
+  , {links, [{"Github", "https://github.com/G-Corp/file_signatures"}]}
   , {files, ["src/*"
              , "include/*"
              , "lib/*"
