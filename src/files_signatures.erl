@@ -34,6 +34,9 @@ jpeg(<<16#FF, 16#D8, 16#FF, 16#E8, _:1/binary, _:1/binary,
 jpeg(_) -> false.
 jpg(Data) -> jpeg(Data).
 
+webp(<<16#52, 16#49, 16#46, 16#46, _/binary>>) -> true;
+webp(_) -> false.
+
 zip(<<16#50, 16#4B, 16#03, 16#04, _/binary>>) -> true;
 zip(<<16#50, 16#4B, 16#05, 16#06, _/binary>>) -> true;
 zip(<<16#50, 16#4B, 16#07, 16#08, _/binary>>) -> true;
@@ -184,4 +187,3 @@ mpg(Data) -> mpeg(Data).
 
 flv(<<16#46, 16#4C, 16#56, _/binary>>) -> true;
 flv(_) -> false.
-
