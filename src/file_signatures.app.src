@@ -1,6 +1,6 @@
 {application, file_signatures,
  [{description, "File signatures module for OTP"}
-  , {vsn, "0.1.8"}
+  , {vsn, "0.1.9"}
   , {registered, []}
   , {applications, [
                     kernel,
@@ -9,7 +9,6 @@
   , {env,[]}
   , {modules, []}
 
-  , {maintainers, ["Gregoire Lejeune"]}
   , {licenses, ["BSD-3"]}
   , {links, [{"Github", "https://github.com/G-Corp/file_signatures"}]}
   , {files, ["src/*"
